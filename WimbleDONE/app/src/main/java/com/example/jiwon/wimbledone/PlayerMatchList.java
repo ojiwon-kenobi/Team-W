@@ -88,6 +88,7 @@ public class PlayerMatchList extends AppCompatActivity {
     private LocationCallback mLocationCallback;
     private Location mCurrentLocation;
     private Boolean mRequestingLocationUpdates;
+    private TextView mProfileBttn;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -114,6 +115,23 @@ public class PlayerMatchList extends AppCompatActivity {
 
         // Update Location Button
         mUpdateLocation = (TextView) findViewById(R.id.update_location);
+        mProfileBttn = (TextView) findViewById(R.id.toprofile);
+
+        mProfileBttn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToProfile(v);
+            }
+        });
+//
+//
+//        mUpdateLocation.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                onClick(v);
+//            }
+//        });
+
 
         // Fused Location Client
         mRequestingLocationUpdates = false;
@@ -155,6 +173,11 @@ public class PlayerMatchList extends AppCompatActivity {
         mAdapter = new PlayerMatchAdapter(this, mPlayerMatches);
         mRecyclerView.setAdapter(mAdapter);
         this.context = this;
+    }
+
+    public void goToProfile(View view) {
+        Intent intent = new Intent(this, profilePage.class);
+        startActivity(intent);
     }
 
     /** Updates the RecyclerView with new coordinates. */

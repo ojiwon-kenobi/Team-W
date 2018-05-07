@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.jiwon.wimbledone">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,65 +13,65 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".LoginActivity"
-            android:label= "LoginActivity">
+            android:label="LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
+
         <activity
             android:name=".LoginFBActivity"
-            android:label= "LoginFBActivity">
-        </activity>
-
+            android:label="LoginFBActivity"></activity>
         <activity
             android:name=".SMSCodeActivity"
-            android:label= "SMSCodeActivity"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
-
+            android:label="SMSCodeActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
         <activity
             android:name=".SMSCodeConfirmationActivity"
-            android:label= "SMSCodeConfirmationActivity"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
-
-        <activity android:name= ".NameProfileCreationActivity"
-            android:label= "NameProfileCreationActivity"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
-
-        <activity android:name=".BirthdayProfileCreationActivity"
+            android:label="SMSCodeConfirmationActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".NameProfileCreationActivity"
+            android:label="NameProfileCreationActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".BirthdayProfileCreationActivity"
             android:label="BirthdayProfileCreationActivity"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
-
-        <activity android:name=".NtrpProfileCreationActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".NtrpProfileCreationActivity"
             android:label="NtrpProfileCreationActivity"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
-
-        <activity android:name=".SexProfileCreationActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".SexProfileCreationActivity"
             android:label="SexProfileCreationActivity"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
-
-        <activity android:name=".PlayStyleProfileCreationActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".PlayStyleProfileCreationActivity"
             android:label="PlayStyleProfileCreationActivity"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
-
-        <activity android:name=".PlayerMatchList"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".PlayerMatchList"
             android:label="PlayerMatchList"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
-
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
         <activity
             android:name=".DefaultMessagesActivity"
-            android:theme="@style/BlueTheme"/>
-
+            android:theme="@style/BlueTheme" />
         <activity
             android:name=".DefaultDialogsActivity"
-            android:theme="@style/BlueTheme"/>
+            android:theme="@style/BlueTheme" />
 
-        <!--<activity-->
-        <!--android:name=".ConfirmationActivity"-->
-        <!--android:label= "ConfirmationActivity"-->
-        <!--android:theme="@style/Theme.AppCompat.Light.NoActionBar">-->
+        <!-- <activity -->
+        <!-- android:name=".ConfirmationActivity" -->
+        <!-- android:label= "ConfirmationActivity" -->
+        <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar"> -->
+        <activity android:name=".profilePage"></activity>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
 </manifest>

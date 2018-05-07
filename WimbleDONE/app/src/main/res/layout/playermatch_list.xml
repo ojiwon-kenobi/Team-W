@@ -12,39 +12,55 @@
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
+        style="@style/HeaderBar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        style="@style/HeaderBar"
-        app:theme="@style/AppTheme.AppBarOverlay"
+        android:elevation="4dp"
         app:popupTheme="@style/AppTheme.PopupOverlay"
-        android:elevation="4dp">
+        app:theme="@style/AppTheme.AppBarOverlay">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/title"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical|start"
-                android:textColor="@color/white"
-                android:text="@string/app_name"
-                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 
             <TextView
                 android:id="@+id/update_location"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
                 android:clickable="true"
                 android:focusable="true"
+                android:gravity="center_vertical|end"
                 android:onClick="onClick"
-                android:layout_width="match_parent"
+                android:text="UPDATE LOCATION    "
+                android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                android:visible="true" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:gravity="center_vertical|end"
-                android:text="UPDATE LOCATION    "
+                android:gravity="center_vertical|start"
+                android:text="@string/app_name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/toprofile"
+                android:layout_width="92dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/update_location"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical|center"
+                android:onClick="onClick"
+                android:text="@string/Profile"
                 android:textAppearance="@style/TextAppearance.AppCompat.Menu"
-                android:textColor="@color/white"
                 android:visible="true" />
 
         </RelativeLayout>
