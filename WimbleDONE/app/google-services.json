@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "443819049331",
+    "firebase_url": "https://wimbledone-2fd67.firebaseio.com",
+    "project_id": "wimbledone-2fd67",
+    "storage_bucket": "wimbledone-2fd67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443819049331:android:2a4805a32135c21f",
+        "android_client_info": {
+          "package_name": "com.example.jiwon.wimbledone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443819049331-e99cmhganhtkoui01ehkvp9auho457cg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jiwon.wimbledone",
+            "certificate_hash": "8bd25f14889b2d3022b2f57bbda8d25e6724ce02"
+          }
+        },
+        {
+          "client_id": "443819049331-6nc6m505uqfof448cc9oops0vc5003ig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4CvF9iFptxog_GRUP5TDN5mzjiZ5zJx0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "443819049331-6nc6m505uqfof448cc9oops0vc5003ig.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

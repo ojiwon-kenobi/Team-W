@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_yellow"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="445dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="20dp"
+        android:text="I am a(n)"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView5"
+        android:text="NTRP"
+        android:textAlignment="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView8"
+        android:text="National Tennis Rating Program"
+        android:textAlignment="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/ntrpRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:layout_marginTop="150dp">
+
+        <LinearLayout
+            android:id="@+id/beginnerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/beginnerButton"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="217dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Beginner" />
+
+            <TextView
+                android:id="@+id/beginnerRatingText"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/textView5"
+                android:layout_weight="1"
+                android:paddingRight="0dp"
+                android:text="1.0"
+                android:textAlignment="center"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/intermediateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/intermediateButton"
+                android:layout_width="217dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Intermediate" />
+
+            <TextView
+                android:id="@+id/intermediateRatingText"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/textView5"
+                android:layout_weight="1"
+                android:paddingRight="0dp"
+                android:text="3.0"
+                android:textAlignment="center"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/expertLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/expertButton"
+                android:layout_width="217dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Expert" />
+
+            <TextView
+                android:id="@+id/expertRatingText"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/textView5"
+                android:layout_weight="1"
+                android:paddingRight="0dp"
+                android:text="5.0"
+                android:textAlignment="center"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/ntrpContinueButton"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dateEditText"
+        android:layout_below="@+id/textView7"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="370dp"
+        android:text="Continue"
+        android:textColor="@color/cardview_dark_background" />
+
+</RelativeLayout>

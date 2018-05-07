@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jiwon.wimbledone">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:label= "LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".LoginFBActivity"
+            android:label= "LoginFBActivity">
+        </activity>
+
+        <activity
+            android:name=".SMSCodeActivity"
+            android:label= "SMSCodeActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+
+        <activity
+            android:name=".SMSCodeConfirmationActivity"
+            android:label= "SMSCodeConfirmationActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+
+        <activity android:name= ".NameProfileCreationActivity"
+            android:label= "NameProfileCreationActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+
+        <activity android:name=".BirthdayProfileCreationActivity"
+            android:label="BirthdayProfileCreationActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+
+        <activity android:name=".NtrpProfileCreationActivity"
+            android:label="NtrpProfileCreationActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+
+        <activity android:name=".SexProfileCreationActivity"
+            android:label="SexProfileCreationActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+
+        <activity android:name=".PlayStyleProfileCreationActivity"
+            android:label="PlayStyleProfileCreationActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+
+        <activity android:name=".PlayerMatchList"
+            android:label="PlayerMatchList"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+
+        <activity
+            android:name=".DefaultMessagesActivity"
+            android:theme="@style/BlueTheme"/>
+
+        <activity
+            android:name=".DefaultDialogsActivity"
+            android:theme="@style/BlueTheme"/>
+
+        <!--<activity-->
+        <!--android:name=".ConfirmationActivity"-->
+        <!--android:label= "ConfirmationActivity"-->
+        <!--android:theme="@style/Theme.AppCompat.Light.NoActionBar">-->
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+</manifest>
